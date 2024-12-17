@@ -1,0 +1,298 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Manrope:wght@700&family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+Selected Fonts:
+font-family: 'Inter', sans-serif;
+font-family: 'Manrope', sans-serif;
+font-family: 'Poppins', sans-serif;
+*/
+
+/* Colors */
+:root{
+    --button:#E02C6D;
+    --nav-size: 24px;
+    --nav-weight: 700;
+    --nav-color: #3A3A3A;
+}
+
+/* Navbar Section */
+
+.nav-title{
+    font-family: Poppins;
+    font-size: var(--nav-size);
+    font-weight: var(--nav-weight);
+    color: var(--nav-color);
+}
+
+header{
+    max-width: 1300px;
+    margin: 87px auto;
+}
+
+nav{
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+    gap: 34px;
+}
+
+ul li{
+    list-style: none;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #3A3A3A;
+}
+
+/* Hero Section */
+.hero-section{
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-title{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-bottom: 16px;
+}
+
+.hero-description{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 16px;
+    width: 505px;
+}
+
+.btn-primary{
+    padding: 10px 24px;
+    border-radius: 41px;
+    background: #E02C6D;
+    border: none;
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+/* Sponsors */
+.sponsors{
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Course Section */
+.popular-courses{
+    max-width: 1300px;
+    margin: 100px auto;
+}
+
+.course-title{
+    color: #3A3A3A;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 70px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.course{
+    width: 329px;
+    height: 530px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+    padding: 16px 15px;
+}
+
+.course-img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+.course-intro{
+    color: #18191F;
+    font-family: Poppins;
+    font-size: 28px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: start;
+    margin: 15px 0;
+}
+
+.course-price{
+    color:  rgba(0, 0, 0, 0.87);
+    font-family: Inter;
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.ratings{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+.ratings p{
+    color: #5E6366;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 22px; 
+    letter-spacing: 0.1px;
+}
+
+.ship{
+    width: 196px;
+    color:  #787885;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 143%;
+    letter-spacing: 0.252px;
+}
+
+.all-courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.join{
+    max-width: 1300px;
+    margin: 100px auto;
+}
+
+.join-us{
+    flex-direction: row-reverse;
+}
+
+footer{
+    background: #0A0826;
+    padding: 50px 0;
+    text-align: center;
+}
+
+footer h2{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 24px;
+    font-weight: 700;
+}
+
+footer p{
+    color: var(--text-gray-300, #D9DBE1);
+    font-family: Manrope;
+    font-size: 14px;
+    font-weight: 700;
+}
+
+@media screen and (max-width: 576px) {
+    header{
+       padding: 0 30px;
+    }
+
+    nav{
+        display: flex;
+        flex-direction: column;
+    }
+
+    ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-section{
+        margin: 10px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hero-title{
+        font-size: 30px;
+        width: 300px;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 50px;
+        margin-bottom: 30px;
+    }
+
+    .hero-description{
+        width: 300px;
+        text-align: justify;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .hero-info{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 50px;
+    }
+
+    .h-img{
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .sponsors{
+        /* max-width: 1100px;
+        margin: 0 auto; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap: 30px;
+    }
+
+    /* Course  */
+    .all-courses{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+    .popular-courses{
+        padding: 0 20px;
+    }
+    .course{
+        width: 280px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    /* Join Us */
+    .join{
+        padding: 0 20px;
+    }
+}
